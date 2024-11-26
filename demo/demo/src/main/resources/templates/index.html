@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spring Boot Web App</title>
+</head>
+<body>
+    <h1>Welcome to ${name} Web App!</h1>
+    <form action="/api/submit" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+        <button type="submit">Submit</button>
+    </form>
+    <p th:text="${message}"></p>
+</body>
+
+</html>
